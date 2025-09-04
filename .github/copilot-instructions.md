@@ -1,0 +1,3 @@
+<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
+
+Este projeto é uma API Rest em Node.js/Express para fins de aprendizado de testes e automação de API. Siga a estrutura de controller, service e model. O banco de dados é em memória. Documentação Swagger disponível em /api-docs.
