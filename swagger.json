@@ -73,11 +73,11 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "remetente": { "type": "string" },
-                  "destinatario": { "type": "string" },
-                  "valor": { "type": "number" }
+                  "from": { "type": "string" },
+                  "to": { "type": "string" },
+                  "value": { "type": "number" }
                 },
-                "required": ["remetente", "destinatario", "valor"]
+                "required": ["from", "to", "value"]
               }
             }
           }
