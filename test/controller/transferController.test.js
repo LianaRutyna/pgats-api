@@ -42,7 +42,7 @@ describe('Transfer Controller', () => {
             sinon.restore();
         }); 
 
-            it.only('Usando mocks: Quando informo valores validos eu tenho sucesso com 201 CREATED', async () => {
+        it('Usando mocks: Quando informo valores validos eu tenho sucesso com 201 CREATED', async () => {
             //mock função tranfer do service
             const transferServiceMock = sinon.stub(transferService, 'transfer');
             transferServiceMock.returns({
@@ -62,13 +62,13 @@ describe('Transfer Controller', () => {
             
             expect(res.status).to.equal(201); 
             
-            //validaçao com fixture
+            
             const respostaEsperada = require('../fixture/respostas/quandoInformoValoresValidosEuTenhoSucessoCom201.json')
             delete res.body.date;
             delete respostaEsperada.date;
             expect(res.body).to.deep.equal(respostaEsperada);
             
-            //reset do mock
+            
             sinon.restore();
         });
     });
