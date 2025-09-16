@@ -62,13 +62,13 @@ describe('Transfer Controller', () => {
             
             expect(res.status).to.equal(201); 
             
-            //validaçao com fixture
+            
             const respostaEsperada = require('../fixture/respostas/quandoInformoValoresValidosEuTenhoSucessoCom201.json')
             delete res.body.date;
             delete respostaEsperada.date;
             expect(res.body).to.deep.equal(respostaEsperada);
             
-            //reset do mock
+            
             sinon.restore();
         });
     });
